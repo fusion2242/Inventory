@@ -1,0 +1,84 @@
+#head
+{
+	background-color:pink;
+	height:500px;
+	width:20%;
+}
+
+#top
+{
+	background-color:#14ADC4;
+}
+h3
+{
+	color:white;
+	font-size:14px;
+	font-weight:600;
+	line-height:1.2;
+}
+
+#btn
+{
+	margin-top:5px;
+}
+.btn-group
+{
+	margin-left:40px;
+}
+
+h2
+{
+	color:#00a7d0;
+	font-weight:600;
+	font-size:24px;
+}
+hr
+{
+	width:77%;
+}
+
+#mid
+{
+	text-align: center;
+}
+
+#client
+{
+	border-left:6px solid #0087C3;
+	padding-left:8px;
+	font-size:16px;
+}
+
+.no
+{
+	background:#C4CBC2;
+}
+.desc
+{
+	background:#EEEEEE;
+}
+
+.until
+{
+	background:#DDDDDD;
+}
+
+.qty
+{
+	background:#EEEEEE;
+}
+
+.total
+{
+	background:#DDD;
+}
+
+td
+{
+	border:2px solid white;
+}
+
+tfoot th
+{
+	color: #57B223;
+}
