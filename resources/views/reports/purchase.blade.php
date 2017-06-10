@@ -76,14 +76,19 @@
                            <div class="input-group-addon">
                               <i class="fa fa-calendar"></i>
                            </div>
-                           <input type="text" class="form-control pull-right" id="datepicker">
+                           <input type="text" class="form-control pull-right" id="datepicker1">
                         </div>
                      </div>
                   </div>
                </div>
+                <button type="submit" style="margin-right:9px;" class="getpurchase btn btn-primary pull-right">Submit</button>
             </div>
+
+   <div id="printableArea">  </div>
+
+            
          </div>
-      </section>
+      </section>  
       <!-- /.content -->
    </div>
    <!-- /.content-wrapper -->
@@ -294,5 +299,42 @@
    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
    <!-- AdminLTE for demo purposes -->
    <script src="/dist/js/demo.js"></script>
+<script>
+  $(function () {
+    //Initialize Select2 Elements
+
+    //Date picker
+    $('#datepicker').datepicker({
+      autoclose: true
+    });
+    $('#datepicker1').datepicker({
+      autoclose: true
+    });
+
+
+  });
+</script>
+
+
+<script>
+   
+   $('.getpurchase').on('click', function(){
+      
+      var post =  new Object();
+      post.date_from = $('#datepicker').val();
+      post.date_to = $('#datepicker1').val();
+   $.ajax({
+        url: '/getPurchaseReport',
+        data: post,
+        type: 'post',
+        success: function(response){
+         $("#printableArea").html(response);
+      }
+
+   });
+   });
+
+</script>
+
    </body>
 </html>

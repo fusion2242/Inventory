@@ -99,7 +99,6 @@ Route::get('/accounts',function(){
 });
 
 
-
 Route::get('/bank-payment',function(){
 	return view('Accounts.voucher.bank_payement');
 });
@@ -139,3 +138,14 @@ Route::get('/employee/delete/{id}','EmployeeController@deleteemployee');
 Route::get('/getAllProducts','PurchaseController@getAllProducts');
 
 Route::get('/getSupplier','PurchaseController@getAllSupplier');
+
+
+
+//dummy view to check sales report
+Route::get('/dummyview',function(){
+   return view('reports.printable.salesreport');
+});
+
+Route::post ('/getsalesReport','ReportController@getSalesReportView');
+Route::post ('/getSalesSummmary','ReportController@getSalesSummaryView');
+Route::post ('/getPurchaseReport','ReportController@getPurchaseReportView');

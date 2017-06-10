@@ -506,7 +506,7 @@
                 type:'post',
                 success: function(response){
                    window.setTimeout(function(){window.location.reload();},1000)
-          $('.pro_code').val("");
+       $('.pro_code').val("");
        $('.pro_name').val("");
        $('.pro_quantity').val("");
        $('.pro_cat').val("");

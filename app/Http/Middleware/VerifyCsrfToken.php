@@ -14,7 +14,13 @@ class VerifyCsrfToken extends BaseVerifier
     protected $except = [
     'product/category/submit',
     '/managepurchase/purchase/addNewPurchases',
-    '/mixing/saveMixedProduct'
+    '/mixing/saveMixedProduct',
+    '/addproduct',
+    '/order/addOrder',
+    '/getsalesReport',
+    '/getSalesSummmary',
+    '/getPurchaseReport',
+    
         
 
     ];

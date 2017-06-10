@@ -26,7 +26,7 @@ class OrderController extends Controller
     }
     function viewmanageinvoice()
     {
-    	return view('order.invoice');
+	return view('order.invoice');
     }
     function getOrderByType(){
        
