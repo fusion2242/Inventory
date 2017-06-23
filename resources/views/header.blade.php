@@ -46,7 +46,7 @@
                                  <img src="/dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
                               </div>
                               <h4>
-                                 Fusion Technologies Design Team
+                                 TFOs Group Design Team
                                  <small><i class="fa fa-clock-o"></i> 2 hours</small>
                               </h4>
                               <p>Why not buy a new awesome theme?</p>
@@ -217,14 +217,14 @@
                <li class="dropdown user user-menu">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   <img src="/dist/img/img.png" class="user-image" alt="User Image">
-                  <span class="hidden-xs">Fusion Technologies</span>
+                  <span class="hidden-xs">TFOs Group</span>
                   </a>
                   <ul class="dropdown-menu">
                      <!-- User image -->
                      <li class="user-header">
                         <img src="/dist/img/img.png" class="img-circle" alt="User Image">
                         <p>
-                           Fusion Technologies - Application Developer
+                          TFOs Group - Application Developer
                            <small>Since Nov. 2014</small>
                         </p>
                      </li>

@@ -75,11 +75,11 @@
                               
                            </select>
                         </td>
-                        <td style="width: 10%"><input ng-model="quantity[$index]"  ng-change="checkQuantity($index)" style="width: 100%" type="text" name="quantity"></td>
+                        <td style="width: 10%"><input ng-model="quantity[$index]" data-toggle="popover" class="quantity-{{$index}}"  ng-change="checkQuantity($index)" style="width: 100%" type="text" name="quantity"></td>
                         <td style="width: 10%"> <input ng-model="unitPrice[$index]" style="width: 100%" type="text"></td>
                         <td style="width: 10%" ng-bind="total[$index] = getTotal($index)">{{getTotal($index)}}</td>
                         <td style="width: 10%">
-                           <a ng-click="addField()" class="addProductRow">
+                           <a ng-click="addField()" class="addProductRow"  ng-hide="showPlus[$index]">
                            <i class="glyphicon glyphicon-plus"></i>  
                            </a> 
                            <a ng-click="removeFields($index)" ng-hide="$first">
@@ -104,9 +104,9 @@
                   <div class="row">
                      <div class="col-md-12">
                         <div class="form-group">
-                           <label class="col-sm-5 control-label">Order No.</label>
+                           <label class="col-sm-5 control-label">&nbsp&nbsp Order No.</label>
                            <div class="col-sm-7">
-                              <input  ng-model="orderNo" readonly class="form-control " type="text">
+                              <input  ng-model="orderNo" style="width: 100px;" readonly class="form-control " type="text">
                            </div>
                         </div>
                      </div>
@@ -120,7 +120,7 @@
                               <div class="form-group">
                                  <label class="col-sm-5 control-label">Sub Total</label>
                                  <div class="col-sm-7">
-                                    <input readonly ng-model="subTotal" class="form-control unite" type="text">
+                                    <input readonly ng-model="subTotal" style="width: 100px;" class="form-control unite" type="text">
                                  </div>
                               </div>
                               <br>

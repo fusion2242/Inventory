@@ -99,7 +99,7 @@ $scope.generateInvoice = function(){
               created: $scope.iDate,
                 });
                 $http({
-                    url: '/order/generateInvoice/',
+                    url: '/order/generateInvoice',
                     data: data,
                     method: 'POST',
                     headers: {'Content-Type': 'application/x-www-form-urlencoded'},

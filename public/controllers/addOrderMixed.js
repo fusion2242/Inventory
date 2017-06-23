@@ -6,6 +6,7 @@ $scope.types = [{id: 1, type: 'General'},{id: 2, type: 'Mixed'}];
 $scope.products = [];
 $scope.type = [];
 $scope.unitPrice = [];
+$scope.showPlus = [];
 $scope.product = [];
 $scope.quantity = [];
 $scope.total = [];
@@ -56,7 +57,19 @@ $scope.checkQuantity = function(index){
         alert('select product first');
     }else{
     if(parseInt($scope.quantity[index]) > parseInt($scope.originQ[index])){
-        alert('Quantity entered is greater than the available stock i.e '+$scope.originQ[index]);
+        //alert('Quantity entered is greater than the available stock i.e '+$scope.originQ[index]);
+        $('.quantity-'+index).css({'border-color' : 'red','border-style' : 'inherit'});
+        $('.quantity-'+index).popover({
+            title: 'Quantity Error',
+            content : 'Quantity entered is greater than the available stock i.e '+$scope.originQ[index],
+        });
+        $('.quantity-'+index).popover('toggle');
+        $scope.showPlus[index] = true;
+
+    }else{
+        $('.quantity-'+index).css({'border-color' : 'black'});
+        $('.quantity-'+index).popover('destroy');
+        $scope.showPlus[index] = false;
     }
     }
 }

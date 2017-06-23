@@ -9,7 +9,9 @@ $scope.unitPrice = [];
 $scope.product = [];
 $scope.quantity = [];
 $scope.total = [];
+$scope.showPlus = [];
 $scope.employees = [];
+$scope.originQ = [];
 $scope.comission = 0;
 $scope.is_commisioned = false;
 $scope.orderNo = Math.floor((Math.random() * 999999) + 1);
@@ -37,6 +39,7 @@ $scope.getPrice = function(index){
    var id = $scope.product[index];
    $http.get('/order/getPriceByType/'+id).then(function(response){
 $scope.unitPrice[index] = response.data.selling_price;
+$scope.originQ[index] = response.data.product_quantity; 
 });
 
 }
@@ -49,16 +52,23 @@ $scope.getTotal = function(index){
    }
 }
 $scope.checkQuantity = function(index){
-    if(angular.isUndefined($scope.product[index])){
+  if(angular.isUndefined($scope.product[index])){
         alert('select product first');
     }else{
-    var index = $scope.products.map(function(el) {
-  return el.id;
-}).indexOf($scope.product[index]);
-    var totalQuantity = $scope.products[index].product_quantity;
-    if($scope.quantity[index] > totalQuantity){
-        console.log($scope.quantity[index] > totalQuantity ? true : false);
-        alert('Your entered quantity is larger than the stock');
+    if(parseInt($scope.quantity[index]) > parseInt($scope.originQ[index])){
+        //alert('Quantity entered is greater than the available stock i.e '+$scope.originQ[index]);
+        $('.quantity-'+index).css({'border-color' : 'red','border-style' : 'inherit'});
+        $('.quantity-'+index).popover({
+            title: 'Quantity Error',
+            content : 'Quantity entered is greater than the available stock i.e '+$scope.originQ[index],
+        });
+        $('.quantity-'+index).popover('toggle');
+        $scope.showPlus[index] = true;
+
+    }else{
+        $('.quantity-'+index).css({'border-color' : 'black'});
+        $('.quantity-'+index).popover('destroy');
+        $scope.showPlus[index] = false;
     }
     }
 }
