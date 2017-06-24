@@ -168,7 +168,7 @@
                   <div class="box-body" style="border-top: 0px solid rgb(204, 204, 204);">
                      <div class="row">
                         <div class="col-md-12">
-                           <button ng-click="submitOrder()" id="btn_order" class="btn bg-navy btn-block btn-flat ">Submit Order
+                           <button ng-click="submitOrder()" ng-hide="submitBtn" id="btn_order" class="btn bg-navy btn-block btn-flat ">Submit Order
                            </button>
                         </div>
                      </div>

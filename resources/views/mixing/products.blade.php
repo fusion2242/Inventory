@@ -54,14 +54,14 @@
       <!-- Content Header (Page header) -->
       <section class="content-header">
          <h1>
-            Purchase History
-            <small>manage purchases</small>
+           Mixed Products
+            <small>Manage Mixed products</small>
          </h1>
          <ol class="breadcrumb">
             <li><a href="/"><i class="fa fa-dashboard"></i> Home</a></li>
-             <li class="active">Manage Purchases</li>
-            <li class="active">Purchase</li>
-            <li class="active">Purchase History</li>
+             <li class="active">Mixed</li>
+            <li class="active">Mixed Products</li>
+           
          </ol>
       </section>
       <!-- Main content -->
@@ -87,10 +87,10 @@
                 </tr>
                 <tr ng-repeat="(x,v) in products track by $index">
                   <td>{{v.created_on}}</td>
-                  <td>{{v.name}}</td>
+                  <td>{{v.product_name}}</td>
                   <td>{{v.quantity}}</td>
                   
-                  <td>{{v.price}}</td>
+                  <td>{{v.selling_price}}</td>
                   <td><a ng-click="deleteProduct(v.id,$index)">
                            <i class="glyphicon glyphicon-trash"></i>  
                            </a>  

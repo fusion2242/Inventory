@@ -10,6 +10,7 @@ $scope.showPlus = [];
 $scope.product = [];
 $scope.quantity = [];
 $scope.total = [];
+$scope.submitBtn = false;
 $scope.employees = [];
 $scope.comission = 0;
 $scope.originQ = [];
@@ -65,11 +66,13 @@ $scope.checkQuantity = function(index){
         });
         $('.quantity-'+index).popover('toggle');
         $scope.showPlus[index] = true;
+        $scope.submitBtn = true;
 
     }else{
         $('.quantity-'+index).css({'border-color' : 'black'});
         $('.quantity-'+index).popover('destroy');
         $scope.showPlus[index] = false;
+        $scope.submitBtn = false;
     }
     }
 }
@@ -125,7 +128,10 @@ $scope.submitOrder = function(){
          method: 'POST', 
          headers: {'Content-Type' : 'application/x-www-form-urlencoded'}})
     .then(function(response){
-        console.log(response.data);
+         if(response.data.hasOwnProperty('success')){
+            alert(response.data.msg);
+           $window.location.reload();
+        }
     });
 }
 });

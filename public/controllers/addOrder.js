@@ -1,6 +1,6 @@
 var app = angular.module('addOrder',[]);
 
-app.controller('add',function($scope,$http){
+app.controller('add',function($scope,$http,$window){
 
 $scope.types = [{id: 1, type: 'General'},{id: 2, type: 'Mixed'}]; 
 $scope.products = [];
@@ -12,6 +12,7 @@ $scope.total = [];
 $scope.showPlus = [];
 $scope.employees = [];
 $scope.originQ = [];
+$scope.submitBtn = false;
 $scope.comission = 0;
 $scope.is_commisioned = false;
 $scope.orderNo = Math.floor((Math.random() * 999999) + 1);
@@ -64,11 +65,13 @@ $scope.checkQuantity = function(index){
         });
         $('.quantity-'+index).popover('toggle');
         $scope.showPlus[index] = true;
+        $scope.submitBtn = true;
 
     }else{
         $('.quantity-'+index).css({'border-color' : 'black'});
         $('.quantity-'+index).popover('destroy');
         $scope.showPlus[index] = false;
+        $scope.submitBtn = false;
     }
     }
 }
@@ -122,7 +125,10 @@ $scope.submitOrder = function(){
          method: 'POST', 
          headers: {'Content-Type' : 'application/x-www-form-urlencoded'}})
     .then(function(response){
-        console.log(response.data);
+        if(response.data.hasOwnProperty('success')){
+            alert(response.data.msg);
+           $window.location.reload();
+        }
     });
 }
 });

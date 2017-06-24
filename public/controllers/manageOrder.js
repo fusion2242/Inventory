@@ -82,7 +82,7 @@ $scope.getEmployee = function(id,index){
     if(id == null){
         return 'General Sale';
     }else{
-        return $scope.orders[index].employee_name;
+        return $scope.orders[index].employee_name+" ( "+$scope.orders[index].commission+"/- commission )";
     }
 }
 $scope.generateInvoice = function(){

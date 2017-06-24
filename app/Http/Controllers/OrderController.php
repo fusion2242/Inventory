@@ -64,8 +64,14 @@ class OrderController extends Controller
        $product = $_POST['productId'];
        foreach($product as $key => $p){
            DB::table('order_items')->insert(['order_id' => $orderId, 'product_id' => $p, 'quantity' => $_POST['quantity'][$key], 'unit_price' => $_POST['unitPrice'][$key], 'total' => $_POST['total'][$key]]);
-           DB::table('product')->where('id',$p)->decrement('product_quantity',$_POST['quantity'][$key]);
+           $c = DB::table('product')->where('id',$p);
+           
+           if($c->first()->product_quantity != 0){
+                $c->decrement('product_quantity',$_POST['quantity'][$key]);
+           }
+       
        }
+       return response()->json(['success' => 'ok', 'msg' => 'Order Succesfully Added']);
     }
 
     function getOrders($start,$end){
