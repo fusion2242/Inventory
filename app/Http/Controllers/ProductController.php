@@ -47,8 +47,11 @@ class ProductController extends Controller
     }
      function getproduct()
     {
-       $product =  DB::table('product')->get();
-       $category = DB::table('product_category')->get();
+       $product =  DB::table('product')
+                        ->select('*','product.id as proId','product_category.id as catId')
+                        ->join('product_category','product.product_category','=','product_category.id')
+                        ->get();
+    $category = DB::table('product_category')->get();
 
        return view('product.manage',['pro' => $product,'cat' => $category]);
      
@@ -61,8 +64,19 @@ class ProductController extends Controller
      function add_product()
     { 
          $_POST['_token'] = $_POST['_token'];
+         $string = $_POST['product_image'];
+            $new_data=explode(";",$string);
+            $type=$new_data[0];
+            $data=explode(",",$new_data[1]);
+            header("Content-type:".$type);
+            $codeBase = base64_decode($data[1]);
+            $f = finfo_open();
+            //$mime_type = finfo_buffer($f, $invoice, FILEINFO_MIME_TYPE);
+            $fileName = $_POST['_token'].uniqid().".png";
+            $file = file_put_contents("products/".$fileName,$codeBase);
+            
         DB::table('product')->insert(
-        ['product_code' => $_POST['productcode'],'product_name' => $_POST['product_name'],'product_quantity' => $_POST['product_quantity'],'product_image' => $_POST['product_image'],'date' => $_POST['created_on'],'supplier_id' => $_POST['supplier'],'product_category' => $_POST['product_category'],'buying_price' => $_POST['buying_price'],'selling_price' => $_POST['selling_price']]);  
+        ['product_code' => $_POST['productcode'],'product_name' => $_POST['product_name'],'product_quantity' => $_POST['product_quantity'],'product_image' => $fileName,'date' => $_POST['created_on'],'supplier_id' => $_POST['supplier'],'product_category' => $_POST['product_category'],'buying_price' => $_POST['buying_price'],'selling_price' => $_POST['selling_price']]);  
         Session::flash('success','Product added successfully!');
     }
      function get_cat()
@@ -85,12 +99,21 @@ class ProductController extends Controller
 
     function submitupdatedproduct($id)
     {
-
+        $string = $_POST['product_image'];
+        $new_data=explode(";",$string);
+        $type=$new_data[0];
+        $data=explode(",",$new_data[1]);
+        header("Content-type:".$type);
+        $codeBase = base64_decode($data[1]);
+        $f = finfo_open();
+        //$mime_type = finfo_buffer($f, $invoice, FILEINFO_MIME_TYPE);
+        $fileName = $_POST['_token'].uniqid().".png";
+        $file = file_put_contents("products/".$fileName,$codeBase);
          $_POST['token'] = $_POST['_token'];
         DB::table('product')
             ->where('id', $id)
             ->update(['product_code' => $_POST['product_code'],'product_name' => $_POST['product_name'],
-                'product_quantity' => $_POST['product_quantity'],'product_category' => $_POST['product_category'],'buying_price' => $_POST['buying_price'],'selling_price' => $_POST['selling_price']]);
+                'product_quantity' => $_POST['product_quantity'],'product_category' => $_POST['product_category'],'buying_price' => $_POST['buying_price'],'selling_price' => $_POST['selling_price'], 'product_image' => $fileName]);
           
     Session::flash('updated','Product updated successfully!');
     }

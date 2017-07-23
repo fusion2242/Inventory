@@ -66,6 +66,8 @@
                         <th>Supplier Name</th>
                         <th>Supplier Email</th>
                         <th>Supplier Phone</th>
+                        <th>Address</th>
+                        <th>Comments</th>
                         <th>Date</th>
                         <th>Action</th>
                      </tr>
@@ -77,6 +79,8 @@
                         <td><?php echo $s->suppliername?></td>
                         <td><?php echo $s->email?></td>
                         <td><?php echo $s->phone?></td>
+                        <td><?php echo $s->address?></td>
+                        <td><?php echo $s->comments?></td>
                         <td><?php echo $s->created_on?></td>
                         <td>
                            <a  class="editBtn"  data-toggle="modal"  data-target="#modal_form_vertical" data-id ="<?php echo $s->id?>">  

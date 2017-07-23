@@ -67,14 +67,15 @@
                <table id="example1" class="table table-bordered table-striped">
                   <thead>
                      <tr>
-                        <th>Product Code</th>
-                        <th>Product Name</th>
+                        <th style="width: 5%">Product Code</th>
+                        <th style="width: 5%">Image</th>
+                        <th >Product Name</th>
                         <th>Product Category</th>
-                        <th>Product Quantity</th>
-                        <th>Buying Price</th>
-                        <th>Selling Price</th>
-                        <th>Date</th>
-                        <th>Action</th>
+                        <th style="width: 5%">Product Quantity</th>
+                        <th style="width: 5%">Buying Price</th>
+                        <th style="width: 5%">Selling Price</th>
+                        <th style="width: 5%">Date</th>
+                        <th style="width: 5%">Action</th>
                      </tr>
                   </thead>
                   <tbody>
@@ -83,6 +84,7 @@
                         ?>
                      <tr>
                         <td><?php echo $s->product_code?></td>
+                        <td><img style="width: 140px; height: 100px;" src="<?php echo (isset($s->product_image)) ?  '/products/'.$s->product_image : 'http://via.placeholder.com/140x100' ?>" /> </td> 
                         <td><?php echo $s->product_name?></td>
                         <td><?php echo $a->category?></td>
                         <td><?php echo $s->product_quantity?></td>
@@ -90,7 +92,7 @@
                         <td><?php echo $s->selling_price?></td>
                         <td><?php echo $s->date?></td>
                         <td>
-                           <a  class="editBtn"  data-toggle="modal"  data-target="#modal_form_vertical" data-id ="<?php echo $s->id?>">  
+                           <a href="#" class="editBtn"  data-toggle="modal"  data-target="#modal_form_vertical" data-id ="<?php echo $s->proId?>">  
                            <i class="glyphicon glyphicon-pencil" style="color:Dimgray;"></i></a>
                            &nbsp&nbsp&nbsp
                            <a href="/manageproduct/product/delete/<?php echo $s->id?>">
@@ -165,6 +167,17 @@
                         <input type="text" class="form-control" id="s_price" placeholder="Enter selling price">
                      </div>
                     </div>
+                      <br>
+                    <div class="row">
+                    <div class="col-sm-6 col-lg-6">
+                        <label>Image</label>
+                        <input  id="fileinput" type="file" accept="image/gif, image/jpeg, image/png" onchange="readURL(this);">
+                     </div>
+
+                    <div class="col-sm-6 col-lg-6">
+                        <img id="falseinput" style="width: 140px; height: 100px;" src="" />
+                     </div>
+                    </div>
                   
                </div>
                <div class="modal-footer">
@@ -212,6 +225,7 @@
             $('#pro_quantity').val(data.product_quantity);
             $('#b_price').val(data.buying_price);
             $('#s_price').val(data.selling_price);
+              $('#falseinput').attr('src','/products/'+data.product_image);
           
       
             // $('#lnameModal').val(data.lastName);
@@ -220,7 +234,20 @@
           }
       
         });
-      })
+      });
+
+      var baseImg;
+    		function readURL(input) {
+			if (input.files && input.files[0]) {
+				var reader = new FileReader();
+				reader.onload = function (e) {
+				$('#falseinput').attr('src', e.target.result);
+				console.log(e.target.result);
+        baseImg = e.target.result;
+				};
+				reader.readAsDataURL(input.files[0]);
+			}
+        }
       $('.updateBtn').on('click',function()
       {
         var post = new Object();
@@ -231,6 +258,7 @@
         post.product_category = $('#pro_cat').val();
         post.buying_price = $('#b_price').val();
         post.selling_price = $('#s_price').val();
+        post.product_image = baseImg;
         post._token = $('#token').val();
         var url = '/manageproduct/product/submitupdate'+ '/' + id;
         $.ajax({
@@ -239,6 +267,7 @@
           type : 'post',
           success : function(response)
           {
+
             setTimeout(function(){location.reload()},500);
           }
         });

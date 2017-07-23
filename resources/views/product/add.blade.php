@@ -100,8 +100,11 @@
                      
                      <div class="col-md-4">
                         <label>Product Image</label>
-                        <input type="file" id="pro_img">
+                        <input  id="fileinput" type="file" accept="image/gif, image/jpeg, image/png" onchange="readURL(this);">
                      </div>
+                     <div class="col-md-4">
+                       <img src="http://via.placeholder.com/140x100" id="falseinput" style="width: 100px;text-align: center;"/>
+                       </div>
                      <!--  <div class="row">
                         <div class="form-group">
                         <div class="col-md-4">
@@ -482,6 +485,21 @@
       });
    </script>
    <script type="text/javascript">
+   var baseImg;
+    		function readURL(input) {
+			if (input.files && input.files[0]) {
+				var reader = new FileReader();
+				reader.onload = function (e) {
+				$('#falseinput').attr('src', e.target.result);
+				console.log(e.target.result);
+        baseImg = e.target.result;
+				};
+				reader.readAsDataURL(input.files[0]);
+			}
+        }
+
+
+   ////////
       $('.submit').on('click',function(){
          var date = new Date();
         createdDate = date.getFullYear() + '-' + ('0' + (date.getMonth() + 1)).slice(-2) + '-' + ('0' + date.getDate()).slice(-2);
@@ -491,7 +509,7 @@
          category.product_name = $('#pro_name').val();
          category.product_quantity = $('#pro_quantity').val();
          category.product_category = $('#pro_cat').val();
-         category.product_image = $('#pro_img').val();
+         category.product_image = baseImg;
          category.created_on = createdDate;
          category.supplier = $('#supplier').val();
          category._token = $('#token').val(); 

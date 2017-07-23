@@ -96,6 +96,7 @@ $scope.savePurchases = function(){
     headers: {'Content-Type': 'application/x-www-form-urlencoded'}
     }).then(function(response){
 		alert('Purchase Order Added');
+		  window.setTimeout(function(){window.location.reload();},1000);
 
      });
 }

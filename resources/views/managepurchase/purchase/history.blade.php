@@ -112,12 +112,12 @@
     <div class="modal-content" block-ui="myModalBlock">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        <h4 class="modal-title" id="myModalLabel">Product Detail</h4>
       </div>
       <div class="modal-body">
       <table class="table table-hover" block-ui="myBlockUI">
                 <tr>
-                  <th>Products Code</th>
+                  <th>Product Name</th>
                   <th>Quantity</th>
                   <th>Unit Price</th>
                   <th>Total</th>
@@ -134,8 +134,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
+        </div>
     </div>
   </div>
 </div>

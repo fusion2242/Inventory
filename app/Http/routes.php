@@ -94,15 +94,6 @@ Route::post('/purchase/supplier/submit','PurchaseController@addsupplier');
 
 
 
-Route::get('/accounts',function(){
-   return view('Accounts.main');
-});
-
-
-Route::get('/bank-payment',function(){
-	return view('Accounts.voucher.bank_payement');
-});
-    
 
 
 Route::get('customer/add','CustomerController@Customer_view');
@@ -149,3 +140,9 @@ Route::get('/dummyview',function(){
 Route::post ('/getsalesReport','ReportController@getSalesReportView');
 Route::post ('/getSalesSummmary','ReportController@getSalesSummaryView');
 Route::post ('/getPurchaseReport','ReportController@getPurchaseReportView');
+
+// Accounts
+
+Route::get('/accounts/chatOfAccounts',function(){
+return view('accounts.coa');
+});

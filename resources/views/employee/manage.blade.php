@@ -135,7 +135,7 @@
                            <input type="text" id="emp_phone" class="form-control" placeholder="Enter Employee Phone">
                         </div>
                         <div class="col-sm-4">
-                           <label>Employee Phone</label>
+                           <label>Comments</label>
                           <textarea name="" id="comment" class="form-control" cols="30" rows="10"></textarea>
                         </div>
                      </div>

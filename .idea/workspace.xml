@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0ae5ebab-b77a-4067-b945-5ebc0566440c" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/views.tar.gz" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/dist/img/Thumbs.db" afterPath="$PROJECT_DIR$/public/dist/img/Thumbs.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/plugins/iCheck/square/Thumbs.db" afterPath="$PROJECT_DIR$/public/plugins/iCheck/square/Thumbs.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views.zip" afterPath="$PROJECT_DIR$/resources/views.zip" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/PurchaseController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/PurchaseController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/mixingController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/mixingController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/controllers/addOrder.js" afterPath="$PROJECT_DIR$/public/controllers/addOrder.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/controllers/addOrderMixed.js" afterPath="$PROJECT_DIR$/public/controllers/addOrderMixed.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/controllers/damageProducts.js" afterPath="$PROJECT_DIR$/public/controllers/damageProducts.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/controllers/invoice.js" afterPath="$PROJECT_DIR$/public/controllers/invoice.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/controllers/manageInvoice.js" afterPath="$PROJECT_DIR$/public/controllers/manageInvoice.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/controllers/manageOrder.js" afterPath="$PROJECT_DIR$/public/controllers/manageOrder.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/controllers/manageOrderMix.js" afterPath="$PROJECT_DIR$/public/controllers/manageOrderMix.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/controllers/mixedProducts.js" afterPath="$PROJECT_DIR$/public/controllers/mixedProducts.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/controllers/mixingProduct.js" afterPath="$PROJECT_DIR$/public/controllers/mixingProduct.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/controllers/newPurchaseCtrl.js" afterPath="$PROJECT_DIR$/public/controllers/newPurchaseCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/controllers/purchaseHistory.js" afterPath="$PROJECT_DIR$/public/controllers/purchaseHistory.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/supplier.js" afterPath="$PROJECT_DIR$/public/js/supplier.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/Accounts/ledgers/account.php" afterPath="$PROJECT_DIR$/resources/views/Accounts/ledgers/account.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/Accounts/ledgers/accountclass.php" afterPath="$PROJECT_DIR$/resources/views/Accounts/ledgers/accountclass.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/Accounts/ledgers/accountgroup.php" afterPath="$PROJECT_DIR$/resources/views/Accounts/ledgers/accountgroup.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/Accounts/ledgers/party_ledgers_table.php" afterPath="$PROJECT_DIR$/resources/views/Accounts/ledgers/party_ledgers_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/Accounts/ledgers/sub_acc_table.php" afterPath="$PROJECT_DIR$/resources/views/Accounts/ledgers/sub_acc_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/Accounts/ledgers/sub_account.php" afterPath="$PROJECT_DIR$/resources/views/Accounts/ledgers/sub_account.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/Accounts/reports/balancesheet.php" afterPath="$PROJECT_DIR$/resources/views/Accounts/reports/balancesheet.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/Accounts/reports/profitandloss.php" afterPath="$PROJECT_DIR$/resources/views/Accounts/reports/profitandloss.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/Accounts/trialbalanceview/tbv-1.php" afterPath="$PROJECT_DIR$/resources/views/Accounts/trialbalanceview/tbv-1.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/Accounts/trialbalanceview/tbv-2.php" afterPath="$PROJECT_DIR$/resources/views/Accounts/trialbalanceview/tbv-2.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/Accounts/trialbalanceview/tbv-3.php" afterPath="$PROJECT_DIR$/resources/views/Accounts/trialbalanceview/tbv-3.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/Accounts/voucher/bankpaymentvouch.php" afterPath="$PROJECT_DIR$/resources/views/Accounts/voucher/bankpaymentvouch.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/Accounts/voucher/bankrecievingvoucher.php" afterPath="$PROJECT_DIR$/resources/views/Accounts/voucher/bankrecievingvoucher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/Accounts/voucher/cashpaymentvouch.php" afterPath="$PROJECT_DIR$/resources/views/Accounts/voucher/cashpaymentvouch.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/Accounts/voucher/cashrecievingvoucher.php" afterPath="$PROJECT_DIR$/resources/views/Accounts/voucher/cashrecievingvoucher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/Accounts/voucher/generalVoucher.php" afterPath="$PROJECT_DIR$/resources/views/Accounts/voucher/generalVoucher.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/customer/add.blade.php" afterPath="$PROJECT_DIR$/resources/views/customer/add.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/customer/manage.blade.php" afterPath="$PROJECT_DIR$/resources/views/customer/manage.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/dashboard.blade.php" afterPath="$PROJECT_DIR$/resources/views/dashboard.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/employee/add.blade.php" afterPath="$PROJECT_DIR$/resources/views/employee/add.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/employee/manage.blade.php" afterPath="$PROJECT_DIR$/resources/views/employee/manage.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/errors/503.blade.php" afterPath="$PROJECT_DIR$/resources/views/errors/503.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/footer.blade.php" afterPath="$PROJECT_DIR$/resources/views/footer.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/invoice/invoice.php" afterPath="$PROJECT_DIR$/resources/views/invoice/invoice.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/managepurchase/purchase/history.blade.php" afterPath="$PROJECT_DIR$/resources/views/managepurchase/purchase/history.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/managepurchase/supplier/add.blade.php" afterPath="$PROJECT_DIR$/resources/views/managepurchase/supplier/add.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/managepurchase/supplier/manage.blade.php" afterPath="$PROJECT_DIR$/resources/views/managepurchase/supplier/manage.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/mixing/add.blade.php" afterPath="$PROJECT_DIR$/resources/views/mixing/add.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/mixing/products.blade.php" afterPath="$PROJECT_DIR$/resources/views/mixing/products.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/nav.blade.php" afterPath="$PROJECT_DIR$/resources/views/nav.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/order/add.blade.php" afterPath="$PROJECT_DIR$/resources/views/order/add.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/order/add_mix.blade.php" afterPath="$PROJECT_DIR$/resources/views/order/add_mix.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/order/invoice.blade.php" afterPath="$PROJECT_DIR$/resources/views/order/invoice.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/order/manage.blade.php" afterPath="$PROJECT_DIR$/resources/views/order/manage.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/order/manage_mix.blade.php" afterPath="$PROJECT_DIR$/resources/views/order/manage_mix.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/product/add.blade.php" afterPath="$PROJECT_DIR$/resources/views/product/add.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/product/category/product.blade.php" afterPath="$PROJECT_DIR$/resources/views/product/category/product.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/product/category/sub.blade.php" afterPath="$PROJECT_DIR$/resources/views/product/category/sub.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/product/damage.blade.php" afterPath="$PROJECT_DIR$/resources/views/product/damage.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/product/manage.blade.php" afterPath="$PROJECT_DIR$/resources/views/product/manage.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/reports/printable/purchasereport.blade.php" afterPath="$PROJECT_DIR$/resources/views/reports/printable/purchasereport.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/reports/printable/salesreport.blade.php" afterPath="$PROJECT_DIR$/resources/views/reports/printable/salesreport.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/reports/purchase.blade.php" afterPath="$PROJECT_DIR$/resources/views/reports/purchase.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/reports/sale.blade.php" afterPath="$PROJECT_DIR$/resources/views/reports/sale.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/reports/salesSummary.blade.php" afterPath="$PROJECT_DIR$/resources/views/reports/salesSummary.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/reports/stock.blade.php" afterPath="$PROJECT_DIR$/resources/views/reports/stock.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/vendor/.gitkeep" afterPath="$PROJECT_DIR$/resources/views/vendor/.gitkeep" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" />
+    </list>
+    <ignored path="inventory.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="inventory" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="add.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/product/add.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="manage.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/product/manage.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-14.461538">
+              <caret line="270" column="12" selection-start-line="270" selection-start-column="12" selection-end-line="270" selection-end-column="12" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ProductController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.1923075">
+              <caret line="102" column="39" selection-start-line="102" selection-start-column="39" selection-end-line="102" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/managepurchase/supplier/add.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.2637931">
+              <caret line="95" column="114" selection-start-line="95" selection-start-column="114" selection-end-line="95" selection-end-column="114" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" />
+        <option value="$PROJECT_DIR$/resources/views/product/manage.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/managepurchase/supplier/add.blade.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <gulpfiles>
+      <GulpfileState>
+        <gulpfile-path>$PROJECT_DIR$/gulpfile.js</gulpfile-path>
+      </GulpfileState>
+    </gulpfiles>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inventory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inventory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inventory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inventory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inventory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inventory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inventory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inventory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inventory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="product" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inventory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inventory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="managepurchase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="supplier" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inventory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inventory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="managepurchase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inventory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inventory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inventory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inventory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inventory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inventory" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Http" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../asaatza-master" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0ae5ebab-b77a-4067-b945-5ebc0566440c" name="Default" comment="" />
+      <created>1500210686421</created>
+      <option name="number" value="Default" />
+      <updated>1500210686421</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/resources/views/product/damage.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/product/add.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/product/manage.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.461538">
+          <caret line="270" column="12" selection-start-line="270" selection-start-column="12" selection-end-line="270" selection-end-column="12" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#1;n#div#2;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ProductController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.1923075">
+          <caret line="102" column="39" selection-start-line="102" selection-start-column="39" selection-end-line="102" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/managepurchase/supplier/add.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2637931">
+          <caret line="95" column="114" selection-start-line="95" selection-start-column="114" selection-end-line="95" selection-end-column="114" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -53,7 +53,7 @@
       <!-- Main content -->
       <section class="content">
          <?php if(Session::has('success')):?>
-         <div class="alert alert-success alert-dismissible">
+         <div class="alert alert-success alert-dismissible myalert">
             <button type="button" class="close closeBtn" data-dismiss="alert" aria-hidden="true">&times;</button>
             <h4><i class="icon fa fa-check"></i> Success!</h4>
             <?php echo session('success')?> 
@@ -91,9 +91,9 @@
                   <div class="form-group">
                      <div class="col-md-4">
                         <label>Phone No</label>
-                        <input type="number" class="form-control phoneno"  placeholder="0333-xxxxx">
-                        <input type="number" class="form-control phoneno"  placeholder="0333-xxxxx">
-                        <input type="number" class="form-control phoneno"  placeholder="0333-xxxxx">
+                        <input type="text" class="form-control phoneno"  data-inputmask='"mask": "(99) 999-9999999"' data-mask>
+                        <input type="text" class="form-control phoneno"  data-inputmask='"mask": "(99) 999-9999999"' data-mask>
+                        <input type="text" class="form-control phoneno"  data-inputmask='"mask": "(99) 999-9999999"' data-mask>
                      </div>
                     
                      <div class="col-md-4">
@@ -129,6 +129,11 @@
    <!-- ./wrapper -->
    <!-- jQuery 2.2.3 -->
    <script src="/plugins/jQuery/jquery-2.2.3.min.js"></script>
+   <script type="text/javascript">
+   $(document).ready(function(){
+    setTimeout(function(){$('.myalert').fadeOut(2000)},2000);
+   });
+   </script>
    <!-- Bootstrap 3.3.6 -->
    <script src="/bootstrap/js/bootstrap.min.js"></script>
    <!-- Select2 -->

@@ -64,7 +64,7 @@
                      <tr ng-repeat="(x,v) in productsFields track by $index">
                         <td width="10%" class="counter">{{$index+1}}</td>
                         <td width="45%">
-                            <select id="{{v.id}}"  class="form-control" ng-model="productCode[$index]" ng-options="item.product_code as item.product_name for item in products">
+                            <select id="{{v.id}}"  class="form-control" ng-model="productCode[$index]" ng-options="item.id as item.product_name for item in products">
             
                             </select>
                         </td>

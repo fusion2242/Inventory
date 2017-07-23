@@ -24,12 +24,12 @@
 
 <header class="clearfix">
 <div class="pull-right" id="logo">
-<h1>Fusion<b>INV</b></h1>
+<h1><b>TFO's</b>Group</h1>
 </div>
 <div id="company">
-<h2 class="">Demo Company</h2>
-<div>+923472729946</div>
-<div>info@fustech.net</div>
+<h2 class="">TFO</h2>
+<div>+923332290711</div>
+<div>info@tfosgroup.com</div>
 </div>
 
 </header>
@@ -84,7 +84,7 @@ endforeach ?>
 </main>
 <hr/>
 <footer class="text-center">
-<strong>Fusion Technologies</strong>&nbsp;&nbsp;&nbsp;F7 Mukhtar Center Bait-ul-muqaram Gulshan Iqbal block 11, Karachi</footer>
+<strong>Gulsahan-e-iqbal</strong>&nbsp;&nbsp;&nbsp;Block-6 Karachi, Pakistan</footer>
 
 
 </div>

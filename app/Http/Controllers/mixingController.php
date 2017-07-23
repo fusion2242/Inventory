@@ -39,7 +39,11 @@ function add(){
         return response()->json($data);
     }
     function getMixedProductsResources($id){
-        $data = DB::table('mixed_resources')->where('mixed_id',$id)->get();
+        $data = DB::table('mixed_resources')
+                                        ->select('*','product.id as pId','mixed_resources.id as mId','mixed_resources.product_code as mpc')
+                                        ->join('product','mixed_resources.product_code','=','product.id')
+                                        ->where('mixed_resources.mixed_id',$id)
+                                        ->get();
         return response()->json($data);
     }
 

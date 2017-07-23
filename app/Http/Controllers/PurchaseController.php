@@ -25,10 +25,10 @@ class PurchaseController extends Controller
     {
         return view('managepurchase.supplier.add');
     }
-    function viewmanagesupplier()
-    {
-        return view('managepurchase.supplier.manage');
-    }
+    // function viewmanagesupplier()
+    // {
+    //     return view('managepurchase.supplier.manage');
+    // }
     function viewnewpurchases()
     {
         $prod = DB::table('product')->get();
@@ -41,7 +41,7 @@ class PurchaseController extends Controller
     }
     function get()
     {
-       $supplier =  DB::table('supplier')->get();
+       $supplier =  DB::table('supplier')->orderBy('created_on','desc')->get();
        return view('managepurchase.supplier.manage',['sup' => $supplier]);
      
     }

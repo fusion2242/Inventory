@@ -28,7 +28,7 @@ $.ajax({
   //            addclass: 'bg-success'
 
   //        });
-   // window.setTimeout(function(){window.location.reload();},100)
+    window.setTimeout(function(){window.location.reload();},100)
    
 }
 
