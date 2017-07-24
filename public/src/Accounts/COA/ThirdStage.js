@@ -1,9 +1,20 @@
 import React,{Component} from 'react';
-import {Grid,Table, Dimmer, Loader,Label,Form,Button} from 'semantic-ui-react';
+import {Grid,Table, Dimmer, Loader,Label,Form,Button,Dropdown} from 'semantic-ui-react';
 
 class ThirdStage extends Component{
     constructor(){
         super();
+        this.state = {
+            mainHeads : [
+                {key : '01',value : '01', text : 'Current Assets'},
+                {key : '02',value : '02', text : 'NonCurrent Assets'},
+                {key : '03',value : '03', text : 'Current Liabilities'},
+            ],
+            status: [
+                {key : 1, text: 'Active', value: '1'},
+                {key : 2, text: 'In Active', value: '0'},
+            ]
+        }
     }
     render(){
         return(

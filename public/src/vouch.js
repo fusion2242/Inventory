@@ -1,14 +1,14 @@
 import React,{Component} from 'react';
 import ReactDOM from 'react-dom';
-import ChartOfAccounts from './Accounts/COA/ChartOfAccounts';
+import Voucher from './Accounts/Voucher/Voucher';
 
 
 function run(){
 
 
 ReactDOM.render(
-<ChartOfAccounts/>,
-document.getElementById('coa')
+<Voucher/>,
+document.getElementById('voucher')
 );
 
 }// run end

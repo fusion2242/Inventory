@@ -146,3 +146,6 @@ Route::post ('/getPurchaseReport','ReportController@getPurchaseReportView');
 Route::get('/accounts/chatOfAccounts',function(){
 return view('accounts.coa');
 });
+Route::get('/accounts/journalVoucher',function(){
+    return view('accounts.voucher');
+});

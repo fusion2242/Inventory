@@ -175,6 +175,36 @@
             
          </ul>
       </li>
+       <li class="<?php if(Request::segment(1) == "accounts"){echo "active";}else{echo "";}?> treeview">
+         <a href="#">
+         <i class="glyphicon glyphicon-th-large"></i>
+         <span>Accounts</span>
+         <span class="pull-right-container">
+         <span class="label label-primary pull-right">1</span>
+         </span>
+         </a>
+         <ul class="treeview-menu">
+            <li class="<?php if(Request::segment(2) == "chatOfAccounts"){echo "active";}else{echo "";}?> treeview">
+               <a href="/accounts/chatOfAccounts">
+               <i class="glyphicon glyphicon-gift"></i>
+               <span>Chart Of Accounts</span>
+               <span class="pull-right-container">
+               <span class="label label-primary pull-right"></span>
+               </span>
+               </a>
+            </li>
+            <li class="<?php if(Request::segment(2) == "voucher"){echo "active";}else{echo "";}?> treeview">
+               <a href="/accounts/journalVoucher">
+               <i class="glyphicon glyphicon-gift"></i>
+               <span>Journal Voucher</span>
+               <span class="pull-right-container">
+               <span class="label label-primary pull-right"></span>
+               </span>
+               </a>
+            </li>
+            
+         </ul>
+      </li>
    </section>
    <!-- /.sidebar -->
 </aside>
