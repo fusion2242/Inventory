@@ -11,7 +11,7 @@ constructor(){
                 {key : '02',value : '02', text : 'NonCurrent Assets'},
                 {key : '03',value : '03', text : 'Current Liabilities'},
             ],
-            
+            serialCode : 
         }
     }
     componentDidMount(){
