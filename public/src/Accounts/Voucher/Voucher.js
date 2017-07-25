@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import { Container, Header, Grid,Divider, Dropdown , Input} from 'semantic-ui-react'
+import { Container, Header, Grid,Divider, Dropdown , Input,Button} from 'semantic-ui-react'
 
 
 class Voucher extends Component{
@@ -16,9 +16,8 @@ constructor(){
     }
     componentDidMount(){
          $('.vDate').datepicker({
-            autoclose: true,
-            defaultDate: new Date()
-            });
+            autoclose: true
+            }).datepicker("setDate", new Date());
     }
     
     render(){
@@ -27,7 +26,7 @@ constructor(){
                 <Grid style={{marginLeft: 10}}>
                     <Grid.Row> 
                         <Grid.Column width="4" style={{textAlign: 'left', top: 44}}>Date : <input type="text" className="vDate" style={styles.dateInput}/></Grid.Column>
-                        <Grid.Column width="8" style={{textAlign: 'center',wordWrap: 'break-word'}}><Header as="h4">AL MEHRAN BUILDERS PAK (PVT) LTD B-4, BLOCK 16,<br/> GULSHAN-E-IQBAL, KARACHI<br/> General Voucher</Header></Grid.Column>
+                        <Grid.Column width="8" style={{textAlign: 'center',wordWrap: 'break-word'}}><Header as="h4">AL MEHRAN BUILDERS PAK (PVT) LTD B-4, BLOCK 16,<br/> GULSHAN-E-IQBAL, KARACHI<br/> Journal Voucher</Header></Grid.Column>
                         <Grid.Column width="4" style={{textAlign: 'right', top: 44}}>Serial</Grid.Column>
                     </Grid.Row>
                 </Grid>
@@ -67,6 +66,16 @@ constructor(){
                 </Grid>
                 <Divider/>
                  <Input fluid placeholder='Enter Narration...' />
+                 <Divider/>
+                 <Grid>
+                 <Grid.Row>
+                        <Grid.Column width="4" style={{textAlign: 'left'}}><Button style={{marginLeft: 15}}>Save</Button> </Grid.Column>
+                        <Grid.Column width="8" style={{textAlign: 'center'}}><strong></strong></Grid.Column>
+                        <Grid.Column width="4" style={{textAlign: 'right'}}>
+                            
+                        </Grid.Column>
+                    </Grid.Row>
+                </Grid>
                 </Container>
         );
     }
