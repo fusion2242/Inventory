@@ -4,7 +4,7 @@
     "prod": "gulp --production",
     "dev": "gulp watch",
     "bywebpack": "webpack ./public/src/app.js ./public/dist/bundle.js -p",
-    "bybrowserify": "browserify  ./public/src/vouch.js -g [envify --NODE_ENV 'production'] -t [ babelify --presets [ es2015 react ] ]| uglifyjs -c -m > ./public/dist/vouch.js"
+    "bybrowserify": "browserify  ./public/src/app.js -g [envify --NODE_ENV 'production'] -t [ babelify --presets [ es2015 react ] ]| uglifyjs -c -m > ./public/dist/bundle.js"
   },
   "devDependencies": {
     "gulp": "^3.9.1",

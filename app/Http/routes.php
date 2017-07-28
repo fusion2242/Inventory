@@ -143,6 +143,17 @@ Route::post ('/getPurchaseReport','ReportController@getPurchaseReportView');
 
 // Accounts
 
+
+Route::get('/accounts/getAllParents','AccountsController@getAllParents');
+Route::get('/accounts/getAllSub/{id}','AccountsController@getAllSub');
+Route::get('/accounts/getAllSeconds','AccountsController@getAllSeconds');
+Route::get('/accounts/getAllThird','AccountsController@getAllThird');
+Route::get('/accounts/mainHeadsAsSelect','AccountsController@mainHeadsAsSelect');
+Route::get('/accounts/getCode/{id}','AccountsController@getCode');
+Route::get('/accounts/deleteAccount/{id}','AccountsController@deleteAccount');
+Route::get('/accounts/changeAccountStatus/{id}/{status}','AccountsController@changeAccountStatus');
+Route::post('/account/saveAccount','AccountsController@saveAccount');
+
 Route::get('/accounts/chatOfAccounts',function(){
 return view('accounts.coa');
 });

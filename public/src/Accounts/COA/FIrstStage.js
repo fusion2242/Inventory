@@ -1,16 +1,25 @@
 import React,{Component} from 'react';
 import {Grid,Table, Dimmer, Loader,Label} from 'semantic-ui-react';
+import axios from 'axios';
 class FirstStage extends Component{
     constructor(){
         super();
         this.state = {
             dimmer : '',
+           main : [],
+           dataLoading: true,
         }
     }
 componentWillMount(){
     this.setState({
         dimmer: true
-    })
+    });
+    axios.get('/accounts/getAllParents')
+    .then(response =>{
+      this.setState({main: response.data, dataLoading: false});
+      
+      
+    });
 }
 componentDidMount(){
       this.setState({
@@ -22,9 +31,7 @@ componentDidMount(){
    render(){
        return(
            <div>
-                <Dimmer active={this.state.dimmer}>
-                <Loader indeterminate>Preparing Main Heads</Loader>
-                </Dimmer>
+                <Loader active={this.state.dataLoading} inline='centered' content="Getting Data..."/>
          <Table celled>
             <Table.Header>
                 <Table.Row>
@@ -33,18 +40,18 @@ componentDidMount(){
                 </Table.Row>
             </Table.Header>
             <Table.Body>
-                <Table.Row>
-                    <Table.Cell><Label circular color="blue">01</Label></Table.Cell>
-                    <Table.Cell>Current Assets</Table.Cell>
-                </Table.Row>
-                <Table.Row>
-                    <Table.Cell><Label circular color="blue">02</Label></Table.Cell>
-                    <Table.Cell>Non Current Assets</Table.Cell>
-                </Table.Row>
-                <Table.Row>
-                    <Table.Cell><Label circular color="blue">03</Label></Table.Cell>
-                    <Table.Cell>Liabilities</Table.Cell>
-                </Table.Row>
+                {
+                    this.state.main.map(function(v, i){
+                        return(
+                            <Table.Row key={i}>
+                            <Table.Cell><Label circular color="blue">{v.code}</Label></Table.Cell>
+                            <Table.Cell>{v.account}</Table.Cell>
+                            </Table.Row>
+                            );
+                        })
+                }
+                 
+               
             </Table.Body>
          </Table>
          </div>
